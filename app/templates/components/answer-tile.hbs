@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Here are some answers for this question:</h2>
+  <ul>
+    {{#each answers as |answer|}}
+       <li>
+         <h4>Question: {{answer.answer}}</h4>
+         <h4>Author: {{answer.author}}</h4>
+       </li>
+    {{/each}}
+  </ul>
+</div>
