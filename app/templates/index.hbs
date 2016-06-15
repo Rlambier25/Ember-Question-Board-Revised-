@@ -1,0 +1,13 @@
+<h3><strong><em>QUESTION BOARD</em></strong> where all questions have answers.</h3>
+
+<h2>Questions</h2>
+
+<ul>
+   {{#each model as |question|}}
+     <li><h4>{{#link-to 'question' question.id}}{{question.ask}}{{/link-to}} written by {{question.author}}.</h4></li>
+   {{/each}}
+ </ul>
+
+
+ <hr>
+ {{new-question saveQuestion="saveQuestionOnQuestionRoute"}}
