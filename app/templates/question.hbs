@@ -1,6 +1,11 @@
-<h1> {{model.questionAuthor}} has asked {{model.question}} </h1>
-{{log model.title}}
+<h3>"{{model.ask}}" written by {{model.author}}</h3>
+{{answer-tile answers=model.answers}}
+{{new-answer saveAnswer="saveAnswer" question=model}}
+{{update-question question=model update="update"}}
 
-{{question-tile question=model destroyQuestion="destroyQuestion"}}
-
-{{new-answer save2="save3" question=model}}
+<ul>
+  {{#each model as |question|}}
+     <li>{{#link-to 'question' question.id}}{{question.ask}}{{question.author}}{{/link-to}}
+     </li>
+  {{/each}}
+</ul>
