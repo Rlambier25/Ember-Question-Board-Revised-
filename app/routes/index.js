@@ -9,7 +9,9 @@ export default Ember.Route.extend({
     saveQuestion(questionInput){
       var newQuestion = this.store.createRecord('question', questionInput);
       newQuestion.save();
-      this.transitionTo('index');
+      this.transitionTo('index'); //not necessary
     }
   }
 });
+
+//forwards questionInput into newQuestion variable which creates a new instance of the object?

@@ -19,3 +19,7 @@ export default Ember.Component.extend({
     }
   }
 });
+
+
+// saves question with .get() methods from inside questionInput variable
+// sendAction() will send questionInput to saveQuestion in index.hbs.
