@@ -9,3 +9,13 @@ export default DS.Model.extend({
   note: DS.attr(),
   answers: DS.hasMany('answer', { async: true })
 });
+
+
+
+
+
+
+
+// DATA DOWN --- ACTIONS UP
+// answer-tile ==> new-answer.hbs ==> index.hbs ==> routes/answer.js ==> router.js ==> URL4200
+//                                                                     router.js ==> data-base
