@@ -25,6 +25,11 @@ export default Ember.Route.extend({
         this.transitionTo('index');
       },
 
+      like(answer) {
+        answer.set('likes', answer.get('votes') + 1);
+        answer.save();
+      },
+
       destroyQuestion(question) {
             var answer_deletions = question.get('answers').map(function(answer) {
               return answer.destroyRecord();

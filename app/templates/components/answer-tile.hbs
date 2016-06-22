@@ -5,6 +5,8 @@
        <li>
          <h2><strong>Answer: </strong> {{answer.answer}}</h2>
          <h4>Author: {{answer.author}}</h4>
+         <h4>Like this answer {{answer.likes}}</h4>
+         {{like-answer answer=answer like="like"}}
        </li>
     {{/each}}
   </ul>
