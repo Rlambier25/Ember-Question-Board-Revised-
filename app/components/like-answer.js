@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sortBy: ['likes:desc'],
-  sortedAnswers: Ember.computed.sort('answer', 'sortBy'),
+  sortBy: ['likes:asc'],
+  sortedAnswers: Ember.computed.sort('question.answers', 'sortBy'),
 
   actions: {
     like(answer) {
