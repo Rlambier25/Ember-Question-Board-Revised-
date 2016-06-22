@@ -6,9 +6,13 @@
 
 {{update-question question=model update="update"}}
 
-<ul>
+{{question-tile question=model destroyQuestion="destroyQuestion"}}
+
+
+
+<!-- <ul>
   {{#each model as |question|}}
      <li>{{#link-to 'question' question.id}}{{question.ask}}{{question.author}}{{/link-to}}
      </li>
   {{/each}}
-</ul>
+</ul> -->
