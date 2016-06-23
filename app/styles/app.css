@@ -12,6 +12,11 @@ body {
   text-align: center;
 }
 
+.form-group {
+  color: black;
+}
+
+
 
 /*.header {
   text-color: Black;
