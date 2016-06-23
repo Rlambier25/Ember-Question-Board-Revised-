@@ -12,7 +12,7 @@ export default Ember.Component.extend({
       answer: this.get('answer'),
       author: this.get('author'),
       question: this.get('question'),
-      likes: 0
+      votes: 0
   };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);

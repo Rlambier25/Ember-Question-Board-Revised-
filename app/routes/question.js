@@ -26,7 +26,8 @@ export default Ember.Route.extend({
       },
 
       like(answer) {
-        answer.set('likes', answer.get('votes') + 1);
+        console.log(answer.get('votes'));
+        answer.set('votes', answer.get('votes') + 1);
         answer.save();
       },
 
