@@ -1,5 +1,7 @@
 # Ember-question-board
 
+![screenshot 5](https://cloud.githubusercontent.com/assets/14284114/18421495/cfe3761c-7840-11e6-862f-ca1904430a09.png)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
